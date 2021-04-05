@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>SMS2WEB</title>
+</head>
+<body>
+
+    
+	<div id="head">
+	
+	<img src="img/ic_launcher.png"  alt="SMS2WEB"/>
+	<h1>SMS2WEB</h1>
+	</div>
+	<div class="clearfix"></div>
+	<br />
+	<fieldset>
+        <legend>Device INFO</legend>
+		<label id="deviceModel" style="color:#F4511E;word-break:break-all;text-align:left"></label>
+		<br/>
+        <label id="deviceId" style="color:Blue;word-break:break-all;text-align:left"></label>
+		<br/>
+		<label id="deviceSerial" style="color:#F4511E;word-break:break-all;text-align:left"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Methods</legend>
+		<div id="btnCnt">
+        <button type="button" id="startWatch">StartWatch</button>
+        <button type="button" id="stopWatch">StopWatch</button>
+		<div>
+    </fieldset>
+    <fieldset>
+        <legend>Status</legend>
+        <label id="status" style="color:#F4511E;word-break:break-all">SMS watching not started.</label>
+    </fieldset>
+    <fieldset>
+        <legend>Events</legend>
+        <label id="event" style="color:#9C27B0;word-break:break-all">Waiting for event.</label>
+    </fieldset>
+	<fieldset>
+        <legend>Options</legend>
+		<div id="btnCnt">
+        <button type="button" id="deleteSim1">Empty SMS from (SIM1)</button>
+        <button type="button" id="deleteSim2">Empty SMS from (SIM2)</button><br />
+		</div>
+    </fieldset>
+    <fieldset>
+        <legend>About</legend>
+        <label style="text-align:left"><strong>Note</strong> this app created for *.blsspainvisa.com by <strong><a href="http://fb.com/LoTec.Chemseddine" target="_blank">LoTech</a></strong>.</label><br />
+    </fieldset>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
